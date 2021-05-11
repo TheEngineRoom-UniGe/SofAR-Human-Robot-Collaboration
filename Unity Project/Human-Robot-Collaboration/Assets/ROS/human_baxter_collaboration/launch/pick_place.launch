@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find baxter_moveit)/config/params.yaml" command="load"/>
+    <node name="server_endpoint" pkg="baxter_moveit" type="server_endpoint.py" args="--wait" output="screen" respawn="true" />
+    <node name="mover" pkg="baxter_moveit" type="mover.py" args="--wait" output="screen"/>
+    <include file="$(find baxter_moveit)/launch/demo.launch" />
+</launch>

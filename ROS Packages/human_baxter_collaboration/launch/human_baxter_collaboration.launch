@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find human_baxter_collaboration)/config/params.yaml" command="load"/>
+    <node name="server_endpoint" pkg="human_baxter_collaboration" type="server_endpoint_hrc.py" args="--wait" output="screen" respawn="true" />
+    <node name="unity_tf_publisher" pkg="human_baxter_collaboration" type="tf_publisher.py" args="--wait" output="screen"/>
+    <include file="$(find human_baxter_collaboration)/launch/demo.launch" />
+</launch>
