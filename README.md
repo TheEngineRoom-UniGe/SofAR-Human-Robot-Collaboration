@@ -20,3 +20,8 @@ INSTALLATION AND SETUP:
 	- If the previous steps have been successful, you should be able to enter Editor mode (via the Play button) and play the simulation. 
 	- Il the communication is running correctly, on UBUNTU you can echo the topics that are being exchanged between ROS and Unity.
 	- Happy planning!
+
+TIPS
+1) If you experience a strange window when opening the Unity Project for the first time, simply do Quit, then reopen the project and it should not bother you further.
+2) Should you experience issues in the communication between ROS and Unity, especially when publishing FROM ROS TO Unity, remember to disable the firewall of your PC, as it could interfere with the sending of messages over TCP.
+3) When running your project, be sure to launch the ROS files BEFORE playing the Unity simulation, in order to have the server endpoint node up and running before initializing communication.
