@@ -4,6 +4,8 @@ UNITY INSTALLATION (WINDOWS)
 1) Visit https://unity3d.com/get-unity/download and download Unity Hub
 2) Through the Hub, install Unity 2020.2.2 (the version for which the projects have been developed) or later. Beware that later versions (eg. Unity 2021.1.x) may be incompatible with the projects
 
+ROS VERSION USED FOR THE PROJECT: ROS Noetic
+
 INSTALLATION AND SETUP:
 1) on UBUNTU:
 	- Visit https://github.com/TheEngineRoom-UniGe/SofAR-Human-Robot-Collaboration and download the ROS packages needed for the project
