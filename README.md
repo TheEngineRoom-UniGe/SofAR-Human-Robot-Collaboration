@@ -15,7 +15,7 @@ INSTALLATION AND SETUP:
 2) on WINDOWS:
 	- In order to install the framework for human simulation, visit https://github.com/Daimler/mosim_core/wiki/InstallPrecompiled and follow the steps to install the precompiled framework.
 	- Visit https://github.com/TheEngineRoom-UniGe/SofAR-Human-Robot-Collaboration to download the Unity project folder, extract it, then open Unity Hub and ADD the project to your projects list using the associated button.
-	- Finally, open the project
+	- Open the project
 	- In the bar on top of the screen, open the Ros-TCP-Connection tab and replace the ROS_IP with the IP of the machine running ROS.
 	- If the previous steps have been successful, you should be able to enter Editor mode (via the Play button) and play the simulation. 
 	- Il the communication is running correctly, on UBUNTU you can echo the topics that are being exchanged between ROS and Unity.
