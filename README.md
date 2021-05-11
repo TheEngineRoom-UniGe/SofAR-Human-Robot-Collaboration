@@ -4,8 +4,6 @@ UNITY INSTALLATION (WINDOWS)
 1) Visit https://unity3d.com/get-unity/download and download Unity Hub
 2) Through the Hub, install Unity 2020.2.2 (the version for which the projects have been developed) or later. Beware that later versions (eg. Unity 2021.1.x) may be incompatible with the projects
 
-
-Depending on the project you chose, follow these steps:
 HUMAN-ROBOT COLLABORATION:
 1) on UBUNTU:
 	- Visit https://github.com/TheEngineRoom-UniGe/SofAR-Human-Robot-Collaboration and download the ROS packages needed for the project
