@@ -14,7 +14,7 @@
 
          <!-- octomap parameters for moveit -->
          <group ns="move_group" >
-             <rosparam command="load" file="$(find baxter_moveit_config)/config/kinect_sensor.yaml" />
+             <rosparam command="load" file="$(find human_baxter_collaboration)/config/kinect_sensor.yaml" />
          </group>
      </group>
      <arg name="xtion" default="false"/>
@@ -32,7 +32,7 @@
 
          <!-- octomap parameters for moveit -->
          <group ns="move_group" >
-             <rosparam command="load" file="$(find baxter_moveit_config)/config/xtion_sensor.yaml" />
+             <rosparam command="load" file="$(find human_baxter_collaboration)/config/xtion_sensor.yaml" />
          </group>
      </group>
 

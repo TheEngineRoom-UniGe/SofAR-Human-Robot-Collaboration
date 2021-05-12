@@ -4,6 +4,6 @@
   <param name="moveit_controller_manager" value="moveit_fake_controller_manager/MoveItFakeControllerManager"/>
 
   <!-- The rest of the params are specific to this plugin -->
-  <rosparam file="$(find baxter_moveit_config)/config/fake_controllers.yaml"/>
+  <rosparam file="$(find human_baxter_collaboration)/config/fake_controllers.yaml"/>
 
 </launch>

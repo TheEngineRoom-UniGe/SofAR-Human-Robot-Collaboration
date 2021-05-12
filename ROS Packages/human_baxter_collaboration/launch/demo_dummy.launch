@@ -1,6 +1,6 @@
 <launch>
   <arg name="config" default="true"/>
-  <arg name="rviz_config" default="$(find baxter_moveit_config)/launch/moveit.rviz" />
+  <arg name="rviz_config" default="$(find human_baxter_collaboration)/launch/moveit.rviz" />
   <arg name="planner" default="ompl" />
   <arg name="debug" default="false" />
 
@@ -22,7 +22,7 @@
   <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
   <arg name="left_tip_name" default="left_gripper"/>
   <arg name="right_tip_name" default="right_gripper"/>
-  <include file="$(find baxter_moveit_config)/launch/planning_context.launch">
+  <include file="$(find human_baxter_collaboration)/launch/planning_context.launch">
     <arg name="load_robot_description" value="true"/>
     <arg name="left_electric_gripper" value="$(arg left_electric_gripper)"/>
     <arg name="right_electric_gripper" value="$(arg right_electric_gripper)"/>
@@ -43,7 +43,7 @@
   <arg name="kinect" default="false" />
   <arg name="xtion" default="false" />
   <arg name="camera_link_pose" default="0.15 0.075 0.5 0.0 0.7854 0.0"/>
-  <include file="$(find baxter_moveit_config)/launch/move_group.launch">
+  <include file="$(find human_baxter_collaboration)/launch/move_group.launch">
     <arg name="kinect" value="$(arg kinect)" />
     <arg name="xtion" value="$(arg xtion)" />
     <arg name="fake_execution" value="true"/>
@@ -53,7 +53,7 @@
     <arg name="debug" value="$(arg debug)"/>
   </include>
 
-  <include file="$(find baxter_moveit_config)/launch/moveit_rviz.launch">
+  <include file="$(find human_baxter_collaboration)/launch/moveit_rviz.launch">
     <arg name="config" value="$(arg config)" />
     <arg name="rviz_config" value="$(arg rviz_config)" />
   </include>
@@ -65,9 +65,9 @@
 
   <!-- If this package is installed, setting 'db' as 'false' or db_path to user permission dir is required. -->
   <arg name="db" default="false" />
-  <arg name="db_path" default="$(find baxter_moveit_config)/default_warehouse_mongo_db" />
+  <arg name="db_path" default="$(find human_baxter_collaboration)/default_warehouse_mongo_db" />
   <group if="$(arg db)">
-    <include file="$(find baxter_moveit_config)/launch/default_warehouse_db.launch">
+    <include file="$(find human_baxter_collaboration)/launch/default_warehouse_db.launch">
       <arg name="moveit_warehouse_database_path" value="$(arg db_path)" />
     </include>
   </group>

@@ -19,7 +19,7 @@
 
    <param name="collision_detector" value="Hybrid" />
 
-   <rosparam command="load" file="$(find baxter_moveit_config)/config/kinematics.yaml" />
-   <rosparam command="load" file="$(find baxter_moveit_config)/config/chomp_planning.yaml" />
+   <rosparam command="load" file="$(find human_baxter_collaboration)/config/kinematics.yaml" />
+   <rosparam command="load" file="$(find human_baxter_collaboration)/config/chomp_planning.yaml" />
 
 </launch>

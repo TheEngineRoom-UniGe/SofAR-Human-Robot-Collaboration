@@ -15,11 +15,11 @@
   <arg name="publish_monitored_planning_scene" default="true"/>
   <arg name="planner" default="ompl" />
 
-  <include ns="move_group" file="$(find baxter_moveit_config)/launch/planning_pipeline.launch">
+  <include ns="move_group" file="$(find human_baxter_collaboration)/launch/planning_pipeline.launch">
     <arg name="pipeline" value="$(arg planner)" />
   </include>
 
-  <include ns="move_group" file="$(find baxter_moveit_config)/launch/trajectory_execution.launch" if="$(arg allow_trajectory_execution)">
+  <include ns="move_group" file="$(find human_baxter_collaboration)/launch/trajectory_execution.launch" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_controller_manager" value="baxter" unless="$(arg fake_execution)"/>
     <arg name="moveit_controller_manager" value="fake"       if="$(arg fake_execution)"/>
     <arg name="moveit_manage_controllers" value="true" />
@@ -28,7 +28,7 @@
   <arg name="kinect" default="false" />
   <arg name="xtion" default="false" />
   <arg name="camera_link_pose" default="0.15 0.075 0.5 0.0 0.7854 0.0"/>
-  <include file="$(find baxter_moveit_config)/launch/sensor_manager.launch" if="$(arg allow_trajectory_execution)">
+  <include file="$(find human_baxter_collaboration)/launch/sensor_manager.launch" if="$(arg allow_trajectory_execution)">
     <arg name="kinect" value="$(arg kinect)" />
     <arg name="xtion" value="$(arg xtion)" />
     <arg name="camera_link_pose" default="$(arg camera_link_pose)"/>

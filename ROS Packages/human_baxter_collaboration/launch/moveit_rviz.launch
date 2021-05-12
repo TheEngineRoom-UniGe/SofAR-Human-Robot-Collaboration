@@ -1,5 +1,5 @@
 <launch>
-  <arg name="rviz_config" default="$(find baxter_moveit_config)/launch/moveit.rviz" />
+  <arg name="rviz_config" default="$(find human_baxter_collaboration)/launch/moveit.rviz" />
 
   <arg name="debug" default="false" />
   <arg unless="$(arg debug)" name="launch_prefix" value="" />
@@ -11,7 +11,7 @@
   
   <node name="$(anon rviz)" launch-prefix="$(arg launch_prefix)" pkg="rviz" type="rviz" respawn="false"
 	args="$(arg command_args)" output="screen">
-    <rosparam command="load" file="$(find baxter_moveit_config)/config/kinematics.yaml"/>
+    <rosparam command="load" file="$(find human_baxter_collaboration)/config/kinematics.yaml"/>
   </node>
 
 </launch>
